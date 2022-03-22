@@ -1,0 +1,23 @@
+//contains basic needs
+@use "./base/base";
+
+// contains nav bar and header logo
+@use "./layout/nav";
+
+// contains dot pattern background
+@use "./component/dotbg";
+
+// contains about page
+@use "./pages/about";
+
+// contains buttons
+@use "./component/btn";
+
+// contains aside of social links
+@use "./component/aside";
+
+// contains work page
+@use "./pages/work";
+
+// contains skills page
+@use "./pages/skills";

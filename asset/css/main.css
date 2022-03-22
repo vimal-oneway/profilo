@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+header {
+  height: 10vh;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 15px 0 0 0;
+  position: relative;
+}
+header .logo-img {
+  width: 150px;
+}
+header .nav .hamBurger {
+  display: none;
+}
+header .nav .hamBurger_menu {
+  height: 3px;
+  width: 24px;
+  background-color: aliceblue;
+  margin: 5px;
+  position: relative;
+}
+header .nav .hamBurger .menu1 {
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: orange;
+}
+header .nav .hamBurger .menu2 {
+  position: absolute;
+  transform: rotate(-45deg);
+  background-color: #b9f0d4;
+}
+header .nav .hamBurger .menu3 {
+  position: absolute;
+  display: none;
+}
+header .nav-ul {
+  display: flex;
+  justify-content: space-evenly;
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+header .nav-ul--li {
+  padding: 0 16px;
+  list-style: none;
+}
+header .nav-ul--li--a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .nav-ul--li--a:hover {
+  color: #e5e5e5;
+}
+
+.bgCon {
+  position: relative;
+  width: 100%;
+}
+.bgCon .img-bg {
+  height: 120vh;
+  width: 70%;
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  margin: 0 0 0 30%;
+  color: #f48c06;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 100%);
+}
+
+#mainPage {
+  overflow: hidden;
+  width: 100%;
+}
+#mainPage .about {
+  width: 100%;
+  height: 90vh;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mainPage .about-info {
+  width: 60%;
+  padding: 10%;
+  font-family: "open sans";
+}
+#mainPage .about-info--heading {
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  animation: toRight 2s 1;
+}
+@keyframes toRight {
+  0% {
+    opacity: 0;
+    margin-left: -30px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+#mainPage .about-info--subHeading {
+  font-size: 2rem;
+  padding: 2px 0 12px 0;
+  font-weight: bold;
+  animation: toLeft 2s 1;
+}
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    margin-left: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+#mainPage .about-img {
+  width: 40%;
+  height: 77vh;
+  display: flex;
+  align-items: center;
+}
+#mainPage .about-img .vimalImg {
+  margin: 0 0 10% 0;
+  height: 100vh;
+}
+
+.btn {
+  margin: 16px 0;
+  padding: 4px 16px;
+  font: 600 18px "open sans";
+  border: 1px solid #14213d;
+  border-radius: 3px;
+  background-color: #f48c06;
+  color: #ffffff;
+  transition: all cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #f48c06;
+}
+
+.socialLinks {
+  position: fixed;
+}
+.socialLinks-con {
+  margin: 0 20px;
+  top: 50%;
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.socialLinks .icons {
+  display: flex;
+  align-items: center;
+  width: 36px;
+  height: 100%;
+  flex-direction: column;
+}
+.socialLinks .icons a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: all cubic-bezier(0.95, 0.05, 0.795, 0.035) 0.4s;
+}
+.socialLinks .icons a i {
+  margin: 6px;
+  cursor: pointer;
+}
+.socialLinks .icons a .fa-paper-plane {
+  font-size: 16px;
+}
+.socialLinks .icons a:hover {
+  color: #e5e5e5;
+}
+
+.work {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  padding: 0 10%;
+}
+.work-con {
+  height: 40vh;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+.work-con--img {
+  height: 100%;
+  width: 100%;
+}
+.work-con--img img {
+  width: 100%;
+  height: 100%;
+}
+.work-con--info {
+  position: absolute;
+  background-color: #14213d;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 10%;
+  z-index: 50;
+}
+
+@keyframes infoSlideIn {
+  0% {
+    height: 200%;
+    opacity: 0;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes infoSlideOut {
+  0% {
+    opacity: 0;
+    height: 100%;
+  }
+  100% {
+    opacity: 1;
+    height: 200%;
+  }
+}
+.skills {
+  height: 80vh;
+  width: 100%;
+  padding: 0 10%;
+  margin: 10vh 0 0 0;
+  background-color: #14213d;
+  border-radius: 0 100px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-table {
+  width: 100%;
+  padding: 5%;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 30px 25% 25% 25% 25%;
+  gap: 0px;
+  height: 100%;
+}
+.skills-table .html {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+.skills-table .htmlBar {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  grid-column-end: 5;
+}
+.skills-table .css {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+.skills-table .cssBar {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 5;
+}
+.skills-table .js {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+.skills-table .jsBar {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+.skills-table .nodeJs {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 2;
+}
+.skills-table .nodeBar {
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 6;
+}
+.skills-table .sass {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 2;
+}
+.skills-table .sassBar {
+  grid-row-start: 5;
+  grid-column-start: 2;
+  grid-row-end: 5;
+  grid-column-end: 6;
+}
+.skills-table .Bootstrap {
+  grid-row-start: 6;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 2;
+}
+.skills-table .bootstrapBar {
+  grid-row-start: 6;
+  grid-column-start: 2;
+  grid-row-end: 6;
+  grid-column-end: 6;
+}
+.skills-table-bars {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+.skills-table .bar {
+  background-color: #fca311;
+  height: 20px;
+  border-radius: 3px;
+  margin: 0 0 0 40px;
+}
+
+/*# sourceMappingURL=main.css.map */

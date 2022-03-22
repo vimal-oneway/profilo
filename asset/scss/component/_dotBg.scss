@@ -1,0 +1,19 @@
+.bgCon {
+  position: relative;
+  width: 100%;
+
+  .img-bg {
+    height: 120vh;
+    width: 70%;
+
+    position: absolute;
+    z-index: -5;
+
+    top: 0;
+    margin: 0 0 0 30%;
+
+    color: #f48c06;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 100%);
+  }
+}
