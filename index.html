@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webie</title>
+
+    <!-- pattern background -->
+    <link rel="stylesheet" href="./asset/css/pattern.min.css" />
+
+    <!-- local file  -->
+    <link rel="stylesheet" href="./asset/css/main.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./asset/img/favicon.png" type="png/image" />
+  </head>
+  <body>
+    <!--header starts here -->
+    <div class="bgCon">
+      <div class="pattern-dots-md img-bg"></div>
+    </div>
+
+    <header>
+      <!-- header logo section -->
+
+      <section class="logo">
+        <img class="logo-img" src="./asset/img/favicon.png" alt="logo" />
+      </section>
+
+      <!-- header nav section -->
+      <section class="nav">
+        <div class="hamBurger">
+          <!-- to cross the hamBurger use menu1,2,3 as class -->
+          <div class="hamBurger_menu" id="menu1"></div>
+          <div class="hamBurger_menu" id="menu2"></div>
+          <div class="hamBurger_menu" id="menu3"></div>
+        </div>
+        <ul class="nav-ul">
+          <li class="nav-ul--li" id="about">
+            <a href="#" class="nav-ul--li--a">about</a>
+          </li>
+          <li class="nav-ul--li" id="works">
+            <a href="#" class="nav-ul--li--a">works</a>
+          </li>
+          <li class="nav-ul--li" id="skills">
+            <a href="#" class="nav-ul--li--a">skills</a>
+          </li>
+          <li class="nav-ul--li" id="contact">
+            <a href="#" class="nav-ul--li--a">contact</a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <!--header end here -->
+
+    <!-- main starts here -->
+
+    <main id="mainPage">
+      <section class="socialLinks" id="links">
+        <aside class="socialLinks-con">
+          <div class="icons">
+            <!-- github icon -->
+
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- telegram icon -->
+            <a href="">
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+
+            <!-- instagram icon -->
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <!-- linkedIn icon -->
+            <a href="">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <!-- mail icon -->
+            <a href="">
+              <i class="fa-solid fa-at"></i>
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <!-- about section start -->
+      <section id="about" class="about">
+        <div class="background"></div>
+        <div class="about-info">
+          <h1 class="about-info--heading">I'm Vimal Raj</h1>
+          <h5 class="about-info--subHeading">A Web Developer</h5>
+
+          <div class="about-info-btn">
+            <button class="btn" type="menu">resume</button>
+          </div>
+        </div>
+        <div class="about-img">
+          <img
+            class="vimalImg"
+            src="./asset/img/vimalImg.png"
+            alt="Developer-Img"
+          />
+        </div>
+      </section>
+      <!-- about section end -->
+
+      <!-- work section start-->
+      <section id="work" class="work">
+        <!-- container 1 -->
+        <div
+          class="work-con"
+          onmouseover="info('in','hideInfo1')"
+          onmouseout="info('out','hideInfo1')"
+        >
+          <!-- img div of container 1 -->
+          <div class="work-con--img">
+            <img
+              src="./asset/img/Tip calculator app.png"
+              alt="tip calculator"
+            />
+          </div>
+
+          <!-- info div of container 1 -->
+          <div id="hideInfo1">
+            <h2 class="work-con--info--heading">Tip calculator App</h2>
+            <p class="work-con-info--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quas fugit, ex perferendis eos numquam natus, laudantium
+              repudiandae iusto quidem aut, ducimus aperiam iure facilis.
+            </p>
+          </div>
+        </div>
+        <!-- ending of container 1 -->
+
+        <!-- container 2 -->
+        <div
+          class="work-con"
+          onmouseover="info('in','hideInfo2')"
+          onmouseout="info('out','hideInfo2')"
+        >
+          <!-- img div of 2 -->
+          <div class="work-con--img">
+            <img src="./asset/img/Blogr.png" alt="" />
+          </div>
+
+          <!-- info div of 2 -->
+          <div id="hideInfo2">
+            <h2 class="work-con--info--heading">blog site</h2>
+            <p class="work-con-info--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quas fugit, ex perferendis eos numquam natus, laudantium
+              repudiandae iusto quidem aut, ducimus aperiam iure facilis.
+            </p>
+          </div>
+        </div>
+        <!-- ending of container 2 -->
+
+        <!-- container 3 -->
+        <div
+          class="work-con"
+          onmouseover="info('in','hideInfo3')"
+          onmouseout="info('out','hideInfo3')"
+        >
+          <!-- img div of 3 -->
+          <div class="work-con--img">
+            <img src="./asset/img/MOVIE-SEARCH-APL.png" alt="" />
+          </div>
+
+          <!-- info div of 3 -->
+          <div id="hideInfo3">
+            <h2 class="work-con--info--heading">MOVIE-SEARCH-APL</h2>
+            <p class="work-con-info--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quas fugit, ex perferendis eos numquam natus, laudantium
+              repudiandae iusto quidem aut, ducimus aperiam iure facilis.
+            </p>
+          </div>
+        </div>
+        <!-- ending of container 3 -->
+      </section>
+      <!-- ending of works -->
+
+      <!-- section of skills -->
+      <section id="skills" class="skills">
+        <!-- <div class="skills-info">
+          <h2 class="skills-info--heading"></h2>
+          <p class="skills-info--para"></p>
+        </div> -->
+        <div class="skills-table">
+          <!-- html bar -->
+          <div class="skills-table-bars html">
+            <i class="fa-brands fa-html5 fa-lg"></i>
+          </div>
+          <div class="htmlBar bar">80%</div>
+
+          <!-- css bar -->
+          <div class="skills-table-bars css">
+            <i class="fa-brands fa-lg fa-css3-alt"></i>
+          </div>
+          <div class="cssBar bar">70%</div>
+
+          <!-- js bar -->
+          <div class="skills-table-bars js">
+            <i class="fa-brands fa-lg fa-js-square"></i>
+          </div>
+          <div class="jsBar bar">
+            <span class="ds">100</span>
+          </div>
+
+          <!-- node js bar -->
+          <div class="skills-table-bars nodeJs">
+            <i class="fa-brands fa-lg fa-node-js"></i>
+          </div>
+          <div class="nodeBar bar">50%</div>
+
+          <!-- sass bar -->
+          <div class="skills-table-bars sass">
+            <i class="fa-brands fa-lg fa-sass"></i>
+          </div>
+          <div class="sassBar bar">60%</div>
+
+          <!-- bootstrap bar -->
+          <div class="skills-table-bars Bootstrap">
+            <i class="fa-brands fa-lg fa-bootstrap"></i>
+          </div>
+          <div class="bootstrapBar bar">55%</div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div></div>
+        <div></div>
+      </section>
+    </main>
+    <!-- main end here -->
+
+    <!-- footer starts here -->
+
+    <footer></footer>
+    <!-- footer end here -->
+
+    <script src="./asset/script/script.js"></script>
+
+    <!-- font awesome icons  -->
+    <script
+      src="https://kit.fontawesome.com/efb4e8ba98.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
